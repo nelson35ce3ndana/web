@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="PelajaranCSS.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Crete+Round&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<style>
+    .warna2{
+        padding: 10px;
+    }
+    table{
+        width: 80%;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        margin-left: auto; 
+        margin-right: auto;
+        background-color: #c7d3fa;
+        text-align: center;
+        list-style-type: none;
+        outline-color: black;
+        outline: auto;
+        font-family: 'Karla', sans-serif;
+    }
+    td{
+        text-align: center;
+        padding: 1rem;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
+    }
+    
+    input[type=submit],option,select,input{
+        font-family: 'Karla', sans-serif; 
+        font-size: 20px;
+        padding: 8px;
+        width: 50%;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    li {
+        float: left;
+        padding-left: 40px;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    #fullW{
+        width: 100%;
+    }
+
+
+</style>
+<header>
+    <p>Pelajaran</p>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="indexPelajaran.html"><b>Home</b></a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Fisika
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="fisika.html">Gaya Gravitasi Semesta</a>
+                      <a href="fisika1.html">Usaha dan Energi</a>
+                    </div>
+                </div>    
+            </li>
+            <li><a href="informatika.html">Informatika</a></li>
+            <li><a href="mat.html">Matematika</a></li>
+            <li><a href="sosiologi.html">Sosiologi</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Agama
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="agama.html">Kebebasan dan Tanggung Jawab</a>
+                      <a href="agama1.html">Kerajaan Allah</a>
+                    </div>
+                </div>    
+            </li>
+            <li><a href="E-KTP.html">Form</a></li>
+            <li><a href="biodata_11-6_12.html">Tentang Saya</a></li>
+        </ul>
+    </nav>
+    <a class="logo" href="https://kanisius.sch.id/"><img src="mid logo cc 2-598e57cb.png" alt="logo" width="250px"></a>
+</header>
+<body>
+    <div>
+        <table border="1">
+            <td colspan="2"><h1>Pendaftaran E-KTP</h1></td>
+            <tr class="warna1">
+                <td class="warna2">No Pendaftaran :</td>
+                <td><input type="text" id="NoDaftar" required placeholder="--Nomor Pendaftaran--"></td>
+            </tr>
+            <tr>
+                <td class="warna2">Nama :</td>
+                <td><input type="text" id="nama" required placeholder="--Nama--"></td>
+            </tr>
+            <tr>
+                <td class="warna2">Jenis Kelamin</td>
+                <td>
+                    <ul>
+                        <li><input type="radio" name="JenisKelamin" value="Laki-Laki">Laki-Laki</li>
+                        <li><input type="radio" name="JenisKelamin" value="Perempuan">Perempuan</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="TTL">Tempat, Tanggal Lahir</td>
+                <td>
+                    <ul>
+                        <li><input type="text" name="Tempat" placeholder="--Tempat Lahir--" id="fullW"></li>
+                        <li><input type="date" name="Tanggal" value="Perempuan" id="fullW"></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="warna2">Pekerjaan</td>
+                <td><input type="text" id="kerja" required placeholder="--Pekerjaan--"></td>
+            </tr>
+            <tr>
+                <td class="warna2">Status Kenikahan</td>
+                <td>
+                    <ul>
+                        <li><input type="radio" name="StatusNikah" value="0">Menikah</li>
+                        <li><input type="radio" name="StatusNikah" value="1">Belum Menikah</li>
+                        <li><input type="radio" name="StatusNikah" value="1">Janda</li>
+                        <li><input type="radio" name="StatusNikah" value="1">Duda</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="warna2">Alamat</td>
+                <td><input type="text" id="Alamat" required placeholder="Alamat"></td>
+            </tr>
+            <tr>
+                <td class="warna2">Agama</td>
+                <td><select>
+                    <option>--Pilih Agama--</option>
+                    <option>Islam</option>
+                    <option>Katolik</option>
+                    <option>Kristen</option>
+                    <option>Hindu</option>
+                    <option>Budha</option>
+                    <option>Konghucu</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>RT / RW</td>
+                <td>
+                    <ul>
+                        <li>RT<input type="text" id="RT" required placeholder="--RT--"></li>
+                        <li>RW<input type="text" id="RW" required placeholder="--RW--"></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="warna2">Kelurahan</td>
+                <td><input type="text" id="Kelurahan" required placeholder="--Kelurahan--"></td>
+            </tr>
+            <tr>
+                <td class="warna2">Kecamatan</td>
+                <td><input type="text" id="Kecamatan" required placeholder="--Kecamatan--"></td>
+            </tr>
+            <tr>
+                <td class="warna2">Kabupaten</td>
+                <td><input type="text" id="Kabupaten" required placeholder="--Kabupaten--"></td>
+            </tr>
+            <tr>
+                <td class="warna2">Provinsi</td>
+                <td><input type="text" id="Provinsi" required placeholder="--Provinsi--"></td>
+            </tr>
+            <tr>
+                <td class="warna2">Tanggal Pendaftaran</td>
+                <td><input type="date" id="Alamat" required id="fullW"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li><input type="submit" value="Simpan" id="fullW"></li>
+                        <li><input type="submit" value="Batal" id="fullW"></li>
+                    </ul>    
+                
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
